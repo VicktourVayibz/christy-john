@@ -1,0 +1,525 @@
+/* ==========================================================================
+   PREMIUM STYLING: CHRISTIANA JOHN OBIORA EKWUGHE PORTFOLIO
+   Palette: Midnight Onyx Navy, Matte Platinum, Champagne Gold
+   ========================================================================== */
+
+/* 1. RESET & UNIVERSAL PROPERTIES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+img {
+    border-radius: 8px;
+}
+
+:root {
+    --bg-dark: #0D111A;
+    /* Matte Midnight Navy - glare absorbing */
+    --bg-card: #161D2B;
+    /* Soft Dark Slate for containers */
+    --accent-gold: #D4AF37;
+    /* Champagne Gold */
+    --text-platinum: #E2E8F0;
+    /* Muted High-End White */
+    --text-muted: #94A3B8;
+    /* Clean Dark Gray for descriptions */
+    --font-serif: 'Playfair Display', serif;
+    --font-sans: 'Inter', sans-serif;
+    --transition: all 0.4s ease;
+}
+
+body {
+    background-color: var(--bg-dark);
+    color: var(--text-platinum);
+    font-family: var(--font-sans);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px 0;
+}
+
+/* Common Section Headers */
+.section-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-header h2 {
+    font-family: var(--font-serif);
+    font-size: 2.5rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.section-header .sub-heading {
+    color: var(--text-muted);
+    font-size: 1.1rem;
+    margin-top: 10px;
+}
+
+.divider {
+    width: 60px;
+    height: 3px;
+    background-color: var(--accent-gold);
+    margin: 20px auto 0;
+    border-radius: 2px;
+}
+
+/* 2. NAVIGATION BAR */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(13, 17, 26, 0.95);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+    border-bottom: 1px solid rgba(212, 175, 55, 0.1);
+}
+
+.nav-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.navbar .logo {
+    font-family: var(--font-serif);
+    color: var(--accent-gold);
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: var(--text-platinum);
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    transition: var(--transition);
+}
+
+.nav-links a:hover {
+    color: var(--accent-gold);
+}
+
+/* 3. HERO SECTION */
+.hero-section {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 20px;
+    background: radial-gradient(circle at center, #1A2333 0%, var(--bg-dark) 70%);
+}
+
+.hero-content {
+    max-width: 800px;
+    z-index: 5;
+}
+
+.hero-subtitle {
+    color: var(--accent-gold);
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+.hero-title {
+    font-family: var(--font-serif);
+    font-size: 4rem;
+    font-weight: 400;
+    line-height: 1.2;
+    margin-bottom: 25px;
+}
+
+.hero-title span {
+    font-weight: 600;
+    color: var(--accent-gold);
+}
+
+.hero-tagline {
+    color: var(--text-muted);
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto 40px;
+    font-weight: 300;
+}
+
+/* Luxury Primary Button */
+.btn-primary {
+    display: inline-block;
+    padding: 15px 35px;
+    border: 1px solid var(--accent-gold);
+    color: var(--accent-gold);
+    text-decoration: none;
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border-radius: 4px;
+    transition: var(--transition);
+}
+
+.btn-primary i {
+    margin-left: 8px;
+    transition: var(--transition);
+}
+
+.btn-primary:hover {
+    background-color: var(--accent-gold);
+    color: var(--bg-dark);
+    box-shadow: 0 10px 20px rgba(212, 175, 55, 0.15);
+}
+
+.btn-primary:hover i {
+    transform: translateY(4px);
+}
+
+/* 4. ABOUT ME SECTION */
+.about-grid {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    margin-top: 20px;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-text p {
+    color: var(--text-muted);
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    font-weight: 300;
+}
+
+/* Anti-Glare Image Frame Container */
+.image-frame {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.matte-img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 8px;
+    filter: brightness(0.92) contrast(1.03);
+    /* CSS anti-glare processing */
+    border: 1px solid rgba(212, 175, 55, 0.2);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+/* 5. CORPORATE SECTION */
+.corporate-section {
+    background-color: #090C12;
+    /* Marginally darker break */
+}
+
+.corporate-card {
+    background-color: var(--bg-card);
+    border: 1px solid rgba(255, 255, 255, 0.03);
+    padding: 60px 40px;
+    border-radius: 12px;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+.corp-icon {
+    font-size: 2.5rem;
+    color: var(--accent-gold);
+    margin-bottom: 20px;
+}
+
+.corp-label {
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    color: var(--accent-gold);
+    display: block;
+    margin-bottom: 10px;
+}
+
+.corporate-card h3 {
+    font-family: var(--font-serif);
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.corp-location {
+    font-size: 0.95rem;
+    color: var(--text-platinum);
+    margin-bottom: 25px;
+}
+
+.corp-location i {
+    color: var(--accent-gold);
+    margin-right: 6px;
+}
+
+.corp-desc {
+    color: var(--text-muted);
+    font-size: 1.05rem;
+    max-width: 650px;
+    margin: 0 auto;
+    font-weight: 300;
+}
+
+/* 6. FAMILY TIMELINE BUILD */
+.family-section {
+    position: relative;
+}
+
+.timeline {
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+/* Vertical Center Line */
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 2px;
+    background-color: rgba(212, 175, 55, 0.15);
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.timeline-item {
+    padding: 10px 40px;
+    position: relative;
+    width: 50%;
+}
+
+/* Timeline Center Connector Dots */
+.timeline-dot {
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    background-color: var(--bg-dark);
+    border: 2px solid var(--accent-gold);
+    border-radius: 50%;
+    top: 25px;
+    z-index: 1;
+}
+
+.timeline-item.left {
+    left: 0;
+    text-align: right;
+}
+
+.timeline-item.right {
+    left: 50%;
+    text-align: left;
+}
+
+.timeline-item.left .timeline-dot {
+    right: -7px;
+}
+
+.timeline-item.right .timeline-dot {
+    left: -7px;
+}
+
+.timeline-content {
+    padding: 25px;
+    background-color: var(--bg-card);
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.02);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    transition: var(--transition);
+}
+
+.timeline-content:hover {
+    transform: translateY(-5px);
+    border-color: rgba(212, 175, 55, 0.2);
+}
+
+.timeline-content .date {
+    color: var(--accent-gold);
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.timeline-content h3 {
+    font-family: var(--font-serif);
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+.timeline-content p {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    font-weight: 300;
+}
+
+/* 7. LIFESTYLE SOCIAL GRID PORTAL */
+.social-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.social-card {
+    background-color: var(--bg-card);
+    border: 1px solid rgba(255, 255, 255, 0.02);
+    padding: 40px 30px;
+    border-radius: 8px;
+    text-align: center;
+    text-decoration: none;
+    color: var(--text-platinum);
+    transition: var(--transition);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.social-icon {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    transition: var(--transition);
+}
+
+/* Platform Brand Tint Signifiers on Hover */
+.social-card.tiktok .social-icon {
+    color: #EE1D52;
+}
+
+.social-card.instagram .social-icon {
+    color: #E1306C;
+}
+
+.social-card.facebook .social-icon {
+    color: #1877F2;
+}
+
+.social-card h3 {
+    font-family: var(--font-serif);
+    font-size: 1.5rem;
+    margin-bottom: 12px;
+}
+
+.social-card p {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    margin-bottom: 25px;
+    font-weight: 300;
+    height: 45px;
+    /* Alignment insurance */
+}
+
+.btn-text {
+    font-size: 0.85rem;
+    color: var(--accent-gold);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+.btn-text i {
+    margin-left: 5px;
+    transition: var(--transition);
+}
+
+.social-card:hover {
+    transform: translateY(-8px);
+    border-color: rgba(212, 175, 55, 0.2);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+}
+
+.social-card:hover .btn-text i {
+    transform: translateX(5px);
+}
+
+/* 8. PREMIUM FOOTER */
+.main-footer {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #06080D;
+    border-top: 1px solid rgba(255, 255, 255, 0.02);
+}
+
+.main-footer p {
+    color: var(--text-muted);
+    font-size: 0.85rem;
+    letter-spacing: 0.5px;
+}
+
+/* ==========================================================================
+   9. MOBILE RESPONSIVE MEDIA QUERIES
+   ========================================================================== */
+@media (max-width: 900px) {
+    .hero-title {
+        font-size: 2.8rem;
+    }
+
+    .about-grid {
+        flex-direction: column-reverse;
+        gap: 40px;
+    }
+
+    /* Timeline collapses into a modern single single-column list */
+    .timeline::after {
+        left: 31px;
+    }
+
+    .timeline-item {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 20px;
+    }
+
+    .timeline-item.left {
+        text-align: left;
+    }
+
+    .timeline-item.left .timeline-dot,
+    .timeline-item.right .timeline-dot {
+        left: 24px;
+    }
+
+    .social-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .nav-links {
+        display: none;
+    }
+
+    /* Kept clean for simple setup */
